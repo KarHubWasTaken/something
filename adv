@@ -1,7 +1,6 @@
 local queontp = (syn and syn.queue_on_teleport) or queue_on_teleport
-queontp("getgenv().message = "..getgenv().message.." loadstring(game:HttpGet('https://raw.githubusercontent.com/KarHubWasTaken/something/main/adv'))()")
-
+queontp("loadstring(game:HttpGet('https://raw.githubusercontent.com/KarHubWasTaken/something/main/adv'))()")
 repeat wait() until game:IsLoaded()
-game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(getgenv().message, "All")
+game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(readfile("msg.msg"), "All")
 local module = loadstring(game:HttpGet"https://raw.githubusercontent.com/LeoKholYt/roblox/main/lk_serverhop.lua")()
 module:Teleport(game.PlaceId)
