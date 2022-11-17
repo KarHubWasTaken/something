@@ -1,5 +1,5 @@
 local queontp = (syn and syn.queue_on_teleport) or queue_on_teleport
-queontp("getgenv().message = "..getgenv().message.." loadstring(game:HttpGet('https://raw.githubusercontent.com/KarHubWasTaken/something/main/adv'))")
+queontp("getgenv().message = "..getgenv().message.." loadstring(game:HttpGet('https://raw.githubusercontent.com/KarHubWasTaken/something/main/adv'))()")
 
 repeat wait() until game:IsLoaded()
 game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest:FireServer(getgenv().message, "All")
